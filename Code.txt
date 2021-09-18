@@ -1,0 +1,32 @@
+INPUT CODE OF DAYS:
+
+import 'dart:io';
+
+void main() {
+  var A = (stdin.readLineSync());
+  if (A != null) {
+    var num1 = num.parse(A);
+
+    if (num1 < 32 && num1 > 0) {
+      var B = num1 % 7;
+      if (B == 1) {
+        print("Monday");
+      } else if (B == 2) {
+        print("Tuesday");
+      } else if (B == 3) {
+        print("Wednesday");
+      } else if (B == 4) {
+        print("Thursday");
+      } else if (B == 5) {
+        print("Friday");
+      } else if (B == 6) {
+        print("Saturday");
+      } else if (B == 0) {
+        print("Sunday");
+      }
+    } else {
+      print("'ERROR'");
+      print("Please put the correct date!");
+    }
+  }
+}
